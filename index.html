@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <p id="timer"></p>
+
+    <main>
+        <section id="homeScreen">
+            <h1>Welcome to a Javascript quiz!</h1>
+            <h3>Try to answer as many questions as you can before time runs out! Good luck!</h3>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+
+        <section hidden id="questions" class="card">
+            <h2 id="quizQuestion"></h2>
+            <div id="quizOptions">
+                <button id="option0" class="option-button"></button>
+                <button id="option1" class="option-button"></button>
+                <button id="option2" class="option-button"></button>
+                <button id="option3" class="option-button"></button>
+            <p id="answerMessage"></p>
+            </div> 
+
+            <div id="results">
+                <p id="results-text"></p>
+            </div>
+        </section>
+
+        <section hidden id="finalScore">
+            <h2 id="timeUp"></h2>
+            <h2 id="questionsDone"></h2>
+            <p>Your final score is <span id=score></span>.</p>
+            <label for="initials">Enter Initials: </label>
+            <input type="text" id="initials">
+            <button id="addScoreBtn" class="btn">Submit</button>
+        </section>
+
+        <section hidden id="highScores" class="hidden">
+            <h2>High Scores</h2>
+            <div id="listOfHighScores"></div>
+            <button id="backBtn">Back to Main</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+    1. top bar section with View Highscores as a button that takes you to another screen
+    2. Timer
+    3. Quiz contents
+        multiple choice
+    4. add name or initials with score to local storage for the highest scores
+-->
