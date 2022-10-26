@@ -16,4 +16,4 @@ SO THAT I can gauge my progress compared to my peers
 
 ## Screenshot
 
-(./Assets/JS-quiz.png)
+(./Assets/JS-quiz.gif)
